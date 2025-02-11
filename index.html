@@ -4,10 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Konversi Suhu</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>KONVERSI SUHU</h1>
+    <div class="container"></div>
+    <header>
+      <h1>KONVERSI SUHU</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="petunjuk">
+          <h2>Petunjuk</h2>
+          <p>
+            Masukkan suhu dalam celcius, kemudian pilih satuan suhu yang ingin
+            dikonversi.
+          </p>
+        </div>
+        <div class="konversi">
+          <div class="input-form"><input type="number" id="input" />&deg;C</div>
+          <div class="button-container">
+            <button id="hasil">Konversi</button>
+            <button id="reset">Reset</button>
+            <button id="reverse">Reverse</button>
+          </div>
+          <div class="input-form">
+            <input type="number" id="output" readonly />&deg;F
+          </div>
+        </div>
+        <div class="persamaan">
+          <h2>Cara Kalkulasi</h2>
+          <p id="persamaan"></p>
+        </div>
+        <div class="rumus">
+          <h2>Cara Konversi Dari Celsius (&deg;C) ke Fahrenheit (&deg;F)</h2>
+          <hr />
+          <p>
+            suhu S dalam derajat Fahrenheit (&deg;F) sama dengan suhu S dalam
+            derajat Celsius (&deg;C) kali 9/5 tambah 32
+          </p>
+          <p>S<sub>(&deg;F)</sub> = (S<sub>(&degC)</sub> * 9/5) + 32</p>
+        </div>
+      </div>
+    </main>
+    <footer>made by MFH</footer>
     <script src="js/script.js"></script>
   </body>
 </html>
